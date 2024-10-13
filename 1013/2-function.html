@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> 2-函數 </title>
+</head>
+<body>
+    <script>
+        //自訂funtcion name:hello
+        /* 
+        function hello1(){
+            console.log("傳空值+印 hello world -1");
+        }
+        hello1();
+        
+        // 傳遞 
+        function hello2(xx){
+            console.log(`${xx} hello world -2`);
+        };
+        hello2('傳遞');
+        //console.clear(); 
+        world=function(){   //匿名函式
+            console.log('this is a world');
+        };
+        world();
+        */
+        world=function(b){   //匿名函式 + return
+            a=100;
+            // b=10
+            ans=a+b;
+            return ans;  //工作結束
+        };
+        world(b=55);
+        console.log(`${ans}`);
+        </script>
+    
+</body>
+</html>

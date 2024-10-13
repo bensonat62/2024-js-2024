@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>4- let constant</title>
+</head>
+<body>
+    <script>
+        // 使用let , 不會被重新宣告 改變,可以重新宣告, 可以變化的數據
+        let a = 100; //first declaire
+        // let a='aa'; 
+        a = 200; // re declaire
+        if(true){
+            let a='A'; //可以定義 區域變數
+            console.log('區域:'+a);            
+        };
+        console.log('全域:'+a);
+        ///////////////////////////////////////////
+        // const 數字, 不可變化且常駐的數
+        const num1=99; 
+        if(true){
+            const num1=88; //可以定義 區域變數
+            console.log('區域:'+num1);            
+        };
+        console.log('全域:'+num1);
+        // null(沒有東西的物件) vs undeifned(not定義) vs 空值(沒有賦予值的object) vs Nan(Not a Number, 不是數字)            
+        let aa=null; // null
+        let bb;  // undefined
+        let cc=''; //空值 
+        let dd=5*'A'; // not a number
+
+    </script>
+</body>
+</html>
