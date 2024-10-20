@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        //console.log(Math.random());   // 0>= x <1 的隨機浮點數
+        let num=0; j=1
+        for (let i=1;i<100;i++){
+            num=(Math.random())*100;
+            
+            if (num>44 && num<86){
+               console.log(Math.floor(num));
+               j++;
+               if (j>3){
+               break;
+               }
+            }
+        }
+        console.log('---------------------------------');
+
+
+        // 產生 45-80
+        let num1=Math.floor(Math.random()*36);  // 0~35 
+        num1+=45;  // 0+45 ~ 35+45
+        console.log(num1);   // 45-80 整數
+        console.log('-------45-80 整數--------------------------');
+      
+        // fn rand(min, max)間隨機變數 
+        const rand =(min,max) => {
+           let rand=Math.floor(Math.random()*(max-min+1))+min;
+           return;
+        }
+        //rand();
+
+        // 產生陣列
+        let numAry=new Array();
+        for (let i=0;i<10;i++){
+            let num1=Math.floor(Math.random()*36);
+            num1+=45;
+            numAry.push(num1);
+        }
+        console.log(numAry);
+        console.log('-------array--------------------------');
+        
+
+        // 產生6個數字(不重複) 1-49
+
+        
+
+    </script>
+</body>
+</html>
