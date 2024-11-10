@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p id="demo">按這裡，由 DOM 觸發 JS</p>
+    <button onclick="add()">按這裡由 HTML 觸發 JS</button>
+    <script>
+      function add() {
+        var btn = document.createElement("button");
+        btn.textContent = "YA";
+        document.body.appendChild(btn);
+      };
+      document.getElementById("demo").onclick = function () { add() };
+    </script>
+  </body>
+  
+
+</html>

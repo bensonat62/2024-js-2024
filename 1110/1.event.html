@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+     
+  <input type="button" value="onclick demo" onclick="showalert('我是 onclick 效果')">
+  <hr>
+  <input type="button" value="onclick" onclick="whatIs(this)">
+  <input type="button" value="onmousedown" onmousedown="whatIs(this)">
+  <input type="button" value="onmouseup" onmouseup="whatIs(this)">
+  <input type="button" value="onmouseover" onmouseover="whatIs(this)">
+  <input type="button" value="onmouseout" onmouseout="whatIs(this)">
+  <input value="onchange" onchange="whatIs(this)">
+  <input value="onblur" onblur="whatIs(this)">
+  <input value="onfocus" onfocus="whatIs(this)">
+
+  <div id="fakeBtn"></div>
+  <hr>
+  <div>你按下的鍵盤號碼為：<span id="codeName"></span><span id="keycode"></span></div>
+    <script>
+    
+        const whatIs=function(elem){
+            console.log(elem.value);
+            console.log(elem.value.length);
+        } 
+        document.onkeydown=function(event){
+        //console.log(123);
+        document.querySelector('#codeName').innerHTML='Hello JS!!!@@@';
+        document.querySelector('#codeName').style.color='red';
+        //document.querySelector('#codeName').innerHTML='Hello JS!!!';
+        console.log(document.querySelector('#codeName').innerHTML);
+        }
+        
+    </script>
+</body>
+</html>
